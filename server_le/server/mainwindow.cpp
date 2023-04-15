@@ -103,16 +103,16 @@ MainWindow::MainWindow(QWidget *parent)
         3、播放处理
       */
 
-     alertplayer = new QMediaPlayer;
+     //alertplayer = new QMediaPlayer;
     //   alertplayer -> setMedia(QUrl::fromLocalFile("/Users/KuGou/8069.mp3"));
      //1、作为一个内部资源去播放
   //  alertplayer->setMedia(QUrl("qrc:/8069.mp3"));
-     alertplayer->setVolume(50);
+    // alertplayer->setVolume(50);
     // alertplayer->play();
 
-    qDebug() << qApp->applicationDirPath()<<endl;
+    //qDebug() << qApp->applicationDirPath()<<endl;
      //2、本地路径找寻播放那个文件，与Debug文件同级
-      alertplayer->setMedia(QUrl::fromLocalFile(qApp->applicationDirPath() + "/" +"8069.mp3"));
+      //alertplayer->setMedia(QUrl::fromLocalFile(qApp->applicationDirPath() + "/" +"8069.mp3"));
 
     if(startSever())
     {

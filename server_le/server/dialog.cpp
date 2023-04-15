@@ -1,5 +1,7 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+#include "mainwindow.h"
+
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +13,15 @@ Dialog::Dialog(QWidget *parent) :
 Dialog::~Dialog()
 {
     delete ui;
+}
+
+void Dialog::on_buttonBox_accepted()
+{
+    Dialog d;
+    d.exec();
+}
+
+void Dialog::on_buttonBox_rejected()
+{
+
 }
